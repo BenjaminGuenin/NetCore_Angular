@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{3ABD8956-129D-4E80-86A9-374910F532D2}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/AuthController.cs">
+    <Files>
+      <File FileName="Controllers/AuthController.cs" Line="11" Column="20" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ethan/Documents/_DEV_/Workspaces/github/NetCore_Angular/DatingApp.API/Controllers/AuthController.cs" relfile="Controllers/AuthController.cs" line="23" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.DatingApp.API PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
