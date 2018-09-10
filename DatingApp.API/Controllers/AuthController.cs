@@ -18,6 +18,7 @@ namespace DatingApp.API.Controllers
     {
         private readonly IConfiguration _config;
         private readonly IAuthRepository _repo;
+        
         public AuthController(IAuthRepository repo, IConfiguration config)
         {
             _config = config;
@@ -41,7 +42,6 @@ namespace DatingApp.API.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)
         {
-
             // Step 1 - Checking that the username and password match what is stored in the database.
             var userFromRepo = await _repo.Login(userForLoginDto.Username.ToLower(), userForLoginDto.Password);
             if (userFromRepo == null)
