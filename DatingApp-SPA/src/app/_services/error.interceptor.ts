@@ -30,7 +30,7 @@ export class ErrorInterceptor implements HttpInterceptor {
                   modalStateErrors += `${serverError[key]}\n`;
               }
             }
-            
+
             return throwError(modalStateErrors || serverError || 'Server Error');
           }
         })
