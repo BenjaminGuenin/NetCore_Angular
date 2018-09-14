@@ -8,9 +8,17 @@ import { ListComponent } from './components/list/list.component';
 
 // The order matters! Angular goes from top to bottom.
 export const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'members', component: MemberListComponent, canActivate: [AuthGuard] },
-  { path: 'messages', component: MessagesComponent },
-  { path: 'lists', component: ListComponent },
+  {
+    path: '',
+    runGuardsAndResolvers: 'always',
+    canActivate: [AuthGuard],
+    children: [
+      { path: 'members', component: MemberListComponent },
+      { path: 'messages', component: MessagesComponent },
+      { path: 'lists', component: ListComponent },
+    ]
+  },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];
