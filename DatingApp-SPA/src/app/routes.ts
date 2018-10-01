@@ -5,7 +5,6 @@ import { HomeComponent } from './components/home/home.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { ListComponent } from './components/list/list.component';
 
-
 // The order matters! Angular goes from top to bottom.
 export const appRoutes: Routes = [
   { path: '', component: HomeComponent },
