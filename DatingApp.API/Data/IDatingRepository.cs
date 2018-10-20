@@ -19,7 +19,7 @@ namespace DatingApp.API.Data
         // If false, either there were no changes to save and an issue has occured.
         Task<bool> SaveAll();
 
-        Task<IEnumarable<User>> GetUsers();
+        Task<IEnumerable<User>> GetUsers();
         Task<User> GetUser(int id);
     }
 }

@@ -1,17 +1,27 @@
+using DatingApp.API.Models;
+
 namespace DatingApp.API.Data
 {
     public class UserRepository : IUserRepository
     {
-        void Add(User user)
+        public void Add(User user)
         {
-            if (user != null)
-            {
-                if (!_context.User.UserExists(user.username))
-                {
-                    _context.Users.Add(user);
-                    _context.SaveChanges();
-                }
-            }
+            throw new System.NotImplementedException();
+        }
+
+        public void Delete(User user)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Get(User user)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Update(User user)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
