@@ -37,14 +37,14 @@ import { appRoutes } from './routes';
     FormsModule,
     BsDropdownModule.forRoot(),
     RouterModule.forRoot(appRoutes),
-    UserService
   ],
 
   providers: [
     AuthService,
     ErrorInterceptorProvider,
     AlertifyService,
-    AuthGuard
+    AuthGuard,
+    UserService
   ],
   bootstrap: [AppComponent]
 })
